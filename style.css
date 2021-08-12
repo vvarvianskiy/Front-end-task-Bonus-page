@@ -339,7 +339,7 @@ header {
       width: calc(50.5% - 1vw);
     }
     .skewed_red {
-      width: 40%;
+      width: 50%;
       font-size: 16px
     }
     .skewed_green {
@@ -347,7 +347,7 @@ header {
       font-size: 100%;
     }
     .text-box {
-      font-size: 13px;
+      font-size: 12px;
       padding: 10% 11% 6% 3%;
     }
     .navigation_item {
@@ -392,6 +392,9 @@ header {
     /* appears а new additional menu for Desktop */
     .desktop-menu {
       display: block;
+    }
+    .butt-style-PC {
+      font-size: 0.7rem;
     }
 }
 /*Small devices, Tablets*/
@@ -472,7 +475,7 @@ header {
     /* margin-top: -7.5rem; */
   }
   .turnir-small-button {
-    max-width: 16%;
+    max-width: 19%;
     height: 16.5%;
     font-size: 0.70rem;
     padding: 9px 9px;
