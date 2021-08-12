@@ -12,12 +12,10 @@ header {
   min-height: 850px;
   background: rgb(4, 4, 109);
 }
-
 .container {
   max-width:1000px;
   margin: 1rem auto;
 }
-
 .navigation_menu {
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +28,6 @@ header {
   padding: 10px;
   box-shadow: 5px 3px 16px 6px #343ae2;
 }
-
 .navigation_item {
   /* margin: 1.5% 0 1.5% 1.5%; */
   width: 6rem;
@@ -44,14 +41,11 @@ header {
   box-shadow: 0 6px rgb(52, 58, 226);
   cursor: pointer;    
 }
-
 .navigation_item:active {
   background-color: #1f63f7;
   box-shadow: 0 5px rgb(6, 11, 39);
   transform: translateY(4px);
-
 }
-
 .butt-style {
   margin: 0;
   padding: 0;
@@ -63,14 +57,12 @@ header {
 .butt-style:last-child {
   border-right: none;
 }
-
 .bonus_text{
   margin-left: 10px;
   color: rgb(8, 32, 252);
   display: flex;
   justify-content: flex-start;
 }
-
 .tabs-container {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +73,6 @@ header {
   margin: 0 auto;
   max-width: 88%;
 }
-
 .tabs_item {
   width: 100%;
   /* height: 10rem; */
@@ -92,9 +83,7 @@ header {
   border: 2px solid black;
   position: relative;
   overflow: hidden;
-    
 }
-               
 .turnir-small-button{
   border-radius: 16px;
   padding: 6px 6px 6px 6px;
@@ -103,7 +92,6 @@ header {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 .turnir-large-button{
   border-radius: 16px;
   padding: 6px 6px 6px 6px;
@@ -112,7 +100,6 @@ header {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 .turnir-large-button {
   background-color: rgba(255, 255, 255, 0);
   color: #FFFF00;
@@ -126,12 +113,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 .turnir-large-button:hover{
   background-color: #FFFF00;
   color:rgb(3, 3, 3);
 }
-
 .turnir-small-button {
   background-color: rgba(255, 255, 255, 0);
   color: #FFFF00;
@@ -145,17 +130,14 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 .turnir-small-button:hover{
   background-color: #FFFF00;
   color:rgb(3, 3, 3);
 }
-
 .photo{
   position: relative;
   width: 100%;  
 }
-
 .skewed_green {
   position: absolute;
   transform: skew(-25deg); 
@@ -166,7 +148,6 @@ header {
   text-align: center;
   border-radius: 5px; 
 }
-
 .skewed_red {
   position: absolute;
   transform: skew(-25deg); 
@@ -177,7 +158,6 @@ header {
   text-align: center;
   border-radius: 5px;       
 }
-
 .text-box{
   position: absolute;
   color: rgb(251, 255, 0);
@@ -188,37 +168,58 @@ header {
   height: 100%;
   padding: 15% 30% 13% 3%;
 }
-
-
-
-.menu-desktop {
+.desktop-menu {
   display: none;
+}
+
+/* Desktop style navigation panel */
+.navPC {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  border-radius: 3px;
+  background-color: rgb(1, 103, 255);
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.butt-style-PC {
+  cursor: pointer;
+  border: 1px solid  rgb(4, 4, 109);
+  box-shadow: 2px 6px rgb(4, 4, 109);
+  border-radius: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.butt-style-PC:active {
+  /* background-color: #ffffff;
+  box-shadow: 0 5px rgb(255, 255, 255); */
+  transform: translateY(4px);
+}
+.text-color {
+  color: rgb(2, 243, 252);
+  text-decoration: none;
 }
 
 
 
 
 
-
-
-
-/*First custom mobile like iPhone retina display*/
+/* My first media query */
+/*First custom mobile like iPhone 4 retina display*/
 @media only screen and (min-width: 320px) {
-body {
+/* body {
   background: rgb(192, 132, 20);
-}c
+} */
   .tabs_item {
     width: 100%;
   }
   .skewed_red {
     width: 40%;
     font-size: 100%;
-    
   }
   .skewed_green {
     width: 40%;
     font-size: 100%;
-   
   }
   .text-box {
     font-size: 13px;
@@ -250,6 +251,7 @@ body {
     display: flex;
     justify-content: center;
   }
+  /* burger menu and navigation start here */
   .topnav {
     overflow: hidden;
     background-color: #228acf;
@@ -263,25 +265,20 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
   .topnav a.active {
     background-color: #228acf;
     color: white;
-  }
-  
+  } 
   .topnav .icon {
     display: none;
   }
-  
   .show-menu {
     cursor: pointer;
   }
-  
   input.checkbox-menu[type="checkbox"] {
     display: none;
     -webkit-appearance: none;
@@ -302,7 +299,6 @@ body {
   .menu-block {
     display: none;
     opacity: 0;
-    /* vertical-align: middle; */
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
@@ -310,59 +306,45 @@ body {
     transition: all 0.25s;
     background-color: #228acf;  
   }
-  
   ul.navUL {
     list-style: none;
     margin: 0;
     padding: 0.85rem;
   }
-  
   ul.navUL li {
     display: inline-block;
     padding: 0px 5px;
   }
-  
   ul.navUL li a {
     color: #ffffff;
     display: block;
     padding: 3px;
     text-decoration: none;
   }
-  
   ul.navUL li a:hover {
     color: #000000;
     text-decoration: none;
   }
-  
- /* .ul.navUL.responsive {
-      position: relative;
-    }
-  } */
 }
- 
-/*Small devices, Phones*/
+ /* burger menu and navigation end */
+
+
+/*Standart devices, Phones*/
 @media only screen and (min-width: 480px) {
-  .turnir-large-button {
-    padding: 12px;
-}
-.turnir-small-button {
-  padding: 12px 30px;
-}
-  body {
+
+/*body {
     background: rgb(192, 132, 20);
-  }
+  } */
     .tabs_item {
       width: calc(50.5% - 1vw);
     }
     .skewed_red {
       width: 40%;
       font-size: 16px
-      
     }
     .skewed_green {
       width: 40%;
       font-size: 100%;
-     
     }
     .text-box {
       font-size: 13px;
@@ -384,41 +366,47 @@ body {
       width: 20%;
       height: 16.5%;
       font-size: 0.82rem;
+      padding: 12px 30px;
     }
     .turnir-large-button {
       max-width: 100%;
       height: 16.5%;
       font-size: 0.82rem;
+      padding: 12px;
     }
     .navigation_menu {
       gap: 0.2rem;
       display: flex;
       justify-content: center;
     }
-    .burger-menu {
-      display: none;
+    /* .turnir-large-button {
+      padding: 12px;
     }
-    .menu-desktop {
+    .turnir-small-button {
+      padding: 12px 30px;
+    } */
+    /* when opening a larger resolution, the burger menu disappears */
+    .burger-menu {
+      display: none; 
+    }
+    /* appears а new additional menu for Desktop */
+    .desktop-menu {
       display: block;
     }
 }
 /*Small devices, Tablets*/
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     background: rgb(192, 132, 20);
-  }
+  } */
   .tabs_item {
     width: calc(33.3% - 1vw);
   }
     .skewed_red {
-      width: 40%;
-      font-size: 100%;
-      
+      width: 50%;
     }
     .skewed_green {
       width: 40%;
-      font-size: 100%;
-     
     }
     .text-box {
       font-size: 13px;
@@ -436,24 +424,68 @@ body {
       /* margin-top: -7.5rem; */
     }
     .turnir-small-button {
-      width: 20%;
+      max-width: 38%;
       height: 16.5%;
-      font-size: 0.82rem;
+      font-size: 0.70rem;
+      padding: 9px 12px;
     }
     .turnir-large-button {
-      max-width: 100%;
+      max-width: 51%;
       height: 16.5%;
-      font-size: 0.82rem;
+      font-size: 0.70rem;
+      padding: 9px 12px;
     }
     .navigation_menu {
       gap: 0.2rem;
       display: flex;
       justify-content: center;
     }
+    .butt-style-PC {
+      font-size: 0.7rem;
+    }
 }
 /*Medium devices, Desktops*/
 @media only screen and (min-width: 992px) {
-  
+  .skewed_red {
+    width: 50%;
+    padding: 1px;
+    font-size: 15px;
+  }
+  .skewed_green {
+    width: 40%;
+    padding: 1px;
+    font-size: 15px;
+  }
+  .text-box {
+    font-size: 17px;
+  }
+  .navigation_item {
+    width: 30%;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    margin: 1.5% 0 1.5% 1.5%;
+  }
+  .bonus_text {
+    font-size: 1.1rem;
+    margin-bottom: -0.8rem;
+    padding-left: 2.8rem;
+    /* margin-top: -7.5rem; */
+  }
+  .turnir-small-button {
+    max-width: 38%;
+    height: 16.5%;
+    font-size: 0.70rem;
+    padding: 9px 9px;
+  }
+  .turnir-large-button {
+    max-width: 51%;
+    height: 16.5%;
+    font-size: 0.70rem;
+    padding: 9px 9px;
+  }
+  .butt-style-PC {
+    font-size: 0.8rem;
+  }
 }
 /*Large devices, Wide Screens, Full HD, 4k*/
 @media only screen and (min-width: 1660px) {
@@ -462,12 +494,51 @@ body {
     padding: 10% 11% 6% 3%;
   }
   .text-box h3 {
-    font-size: 35px;
+    font-size: 34px;
   }
-  .turnir-small-button {
+  /* .turnir-small-button {
     font-size: 25px;
   }
   .turnir-large-button {
     font-size: 25px;
+  } */
+  .turnir-small-button {
+    max-width: 40%;
+    height: 15.5%;
+    font-size: 1.52rem;
+    padding: 8px 12px;
+    border-radius: 28px;
+  }
+  .turnir-large-button {
+    max-width: 51%;
+    height: 16.5%;
+    font-size: 1.52rem;
+    padding: 9px 9px;
+    border-radius: 30px;
+  }
+  .skewed_red {
+    width: 50%;
+    padding: 2px;
+    font-size: 32px;
+  }
+  .skewed_green {
+    width: 40%;
+    padding: 2px;
+    font-size: 32px;
+  }
+  .butt-style-PC {
+    font-size: 1.5rem;
+  }
 }
+@media only screen and (min-width: 1920px) {
+  .butt-style-PC {
+    font-size: 2rem;
+    padding: 7px;
+  }
+  .text-box h3 {
+    font-size: 30px;
+  }
+  .tabs_item {
+    width: calc(24.4% - 1vw);
+  }
 }
