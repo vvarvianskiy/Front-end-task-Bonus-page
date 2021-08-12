@@ -1,0 +1,473 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+header {
+  background-color: #FFFF00;
+}
+.main-page {
+  min-height: 850px;
+  background: rgb(4, 4, 109);
+}
+
+.container {
+  max-width:1000px;
+  margin: 1rem auto;
+}
+
+.navigation_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.95rem;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 0px;
+  border: 10px currentColor;
+  padding: 10px;
+  box-shadow: 5px 3px 16px 6px #343ae2;
+}
+
+.navigation_item {
+  /* margin: 1.5% 0 1.5% 1.5%; */
+  width: 6rem;
+  height: 2rem;
+  /* background: #47964b;
+  background-color: #ccc; */
+  border-radius: 20px; 
+  background-color: rgba(255, 255, 255, 0); 
+  color: rgb(247, 247, 247);  
+  border: 1px solid  rgb(8, 114, 252); 
+  box-shadow: 0 6px rgb(52, 58, 226);
+  cursor: pointer;    
+}
+
+.navigation_item:active {
+  background-color: #1f63f7;
+  box-shadow: 0 5px rgb(6, 11, 39);
+  transform: translateY(4px);
+
+}
+
+.butt-style {
+  margin: 0;
+  padding: 0;
+  border-right: 2px solid black;
+}
+.butt-style:first-child {
+  border-left: none;
+}
+.butt-style:last-child {
+  border-right: none;
+}
+
+.bonus_text{
+  margin-left: 10px;
+  color: rgb(8, 32, 252);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.1rem;
+  gap: 1vw 1vw;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0 auto;
+  max-width: 88%;
+}
+
+.tabs_item {
+  width: 100%;
+  /* height: 10rem; */
+  background-color: rgba(165, 42, 42, 0.185);
+  background-image: linear-gradient(rgb(197, 47, 47), #54089F);
+  border-radius: 4px;
+  border-radius: 12px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+    
+}
+               
+.turnir-small-button{
+  border-radius: 16px;
+  padding: 6px 6px 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.turnir-large-button{
+  border-radius: 16px;
+  padding: 6px 6px 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.turnir-large-button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FFFF00;
+  border: 2px solid #FFFF00;
+  display: flex;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnir-large-button:hover{
+  background-color: #FFFF00;
+  color:rgb(3, 3, 3);
+}
+
+.turnir-small-button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FFFF00;
+  border: 2px solid #FFFF00;
+  display: flex;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnir-small-button:hover{
+  background-color: #FFFF00;
+  color:rgb(3, 3, 3);
+}
+
+.photo{
+  position: relative;
+  width: 100%;  
+}
+
+.skewed_green {
+  position: absolute;
+  transform: skew(-25deg); 
+  background-color: rgb(54, 228, 10);
+  left: -10px;
+  top: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px; 
+}
+
+.skewed_red {
+  position: absolute;
+  transform: skew(-25deg); 
+  background-color: rgb(255, 0, 0);
+  left: -15px;
+  top: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;       
+}
+
+.text-box{
+  position: absolute;
+  color: rgb(251, 255, 0);
+  /* margin: 25px 0 0 5px; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15% 30% 13% 3%;
+}
+
+
+
+.menu-desktop {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*First custom mobile like iPhone retina display*/
+@media only screen and (min-width: 320px) {
+body {
+  background: rgb(192, 132, 20);
+}c
+  .tabs_item {
+    width: 100%;
+  }
+  .skewed_red {
+    width: 40%;
+    font-size: 100%;
+    
+  }
+  .skewed_green {
+    width: 40%;
+    font-size: 100%;
+   
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .navigation_item {
+    width: 30%;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    margin: 1.5% 0 1.5% 1.5%;
+  }
+  .bonus_text {
+    font-size: 0.8rem;
+    margin-bottom: -0.8rem;
+    padding-left: 0.5rem;
+    /* margin-top: -7.5rem; */
+  }
+  .turnir-small-button {
+    width: 20%;
+    height: 16.5%;
+    font-size: 0.82rem;
+  }
+  .turnir-large-button {
+    max-width: 100%;
+    height: 16.5%;
+    font-size: 0.82rem;
+  }
+  .navigation_menu {
+    gap: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #228acf;
+  }
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #228acf;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .show-menu {
+    cursor: pointer;
+  }
+  
+  input.checkbox-menu[type="checkbox"] {
+    display: none;
+    -webkit-appearance: none;
+  }
+  
+  input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+    opacity: 1;
+    display: block;
+  }
+  .nav-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: #228acf;
+  }
+  .menu-block {
+    display: none;
+    opacity: 0;
+    /* vertical-align: middle; */
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    background-color: #228acf;  
+  }
+  
+  ul.navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0.85rem;
+  }
+  
+  ul.navUL li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  
+  ul.navUL li a {
+    color: #ffffff;
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+  }
+  
+  ul.navUL li a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+ /* .ul.navUL.responsive {
+      position: relative;
+    }
+  } */
+}
+ 
+/*Small devices, Phones*/
+@media only screen and (min-width: 480px) {
+  .turnir-large-button {
+    padding: 12px;
+}
+.turnir-small-button {
+  padding: 12px 30px;
+}
+  body {
+    background: rgb(192, 132, 20);
+  }
+    .tabs_item {
+      width: calc(50.5% - 1vw);
+    }
+    .skewed_red {
+      width: 40%;
+      font-size: 16px
+      
+    }
+    .skewed_green {
+      width: 40%;
+      font-size: 100%;
+     
+    }
+    .text-box {
+      font-size: 13px;
+      padding: 10% 11% 6% 3%;
+    }
+    .navigation_item {
+      width: 30%;
+      height: 1.5rem;
+      font-size: 0.8rem;
+      margin: 1.5% 0 1.5% 1.5%;
+    }
+    .bonus_text {
+      font-size: 0.8rem;
+      margin-bottom: -0.8rem;
+      padding-left: 0.5rem;
+      /* margin-top: -7.5rem; */
+    }
+    .turnir-small-button {
+      width: 20%;
+      height: 16.5%;
+      font-size: 0.82rem;
+    }
+    .turnir-large-button {
+      max-width: 100%;
+      height: 16.5%;
+      font-size: 0.82rem;
+    }
+    .navigation_menu {
+      gap: 0.2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .burger-menu {
+      display: none;
+    }
+    .menu-desktop {
+      display: block;
+    }
+}
+/*Small devices, Tablets*/
+@media only screen and (min-width: 768px) {
+  body {
+    background: rgb(192, 132, 20);
+  }
+  .tabs_item {
+    width: calc(33.3% - 1vw);
+  }
+    .skewed_red {
+      width: 40%;
+      font-size: 100%;
+      
+    }
+    .skewed_green {
+      width: 40%;
+      font-size: 100%;
+     
+    }
+    .text-box {
+      font-size: 13px;
+    }
+    .navigation_item {
+      width: 30%;
+      height: 1.5rem;
+      font-size: 0.8rem;
+      margin: 1.5% 0 1.5% 1.5%;
+    }
+    .bonus_text {
+      font-size: 0.8rem;
+      margin-bottom: -0.8rem;
+      padding-left: 0.5rem;
+      /* margin-top: -7.5rem; */
+    }
+    .turnir-small-button {
+      width: 20%;
+      height: 16.5%;
+      font-size: 0.82rem;
+    }
+    .turnir-large-button {
+      max-width: 100%;
+      height: 16.5%;
+      font-size: 0.82rem;
+    }
+    .navigation_menu {
+      gap: 0.2rem;
+      display: flex;
+      justify-content: center;
+    }
+}
+/*Medium devices, Desktops*/
+@media only screen and (min-width: 992px) {
+  
+}
+/*Large devices, Wide Screens, Full HD, 4k*/
+@media only screen and (min-width: 1660px) {
+  .text-box {
+    font-size: 13px;
+    padding: 10% 11% 6% 3%;
+  }
+  .text-box h3 {
+    font-size: 35px;
+  }
+  .turnir-small-button {
+    font-size: 25px;
+  }
+  .turnir-large-button {
+    font-size: 25px;
+}
+}
